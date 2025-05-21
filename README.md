@@ -1,17 +1,21 @@
-# Hugo Travel
+# Hugo Forum Topic #54772
 
-## Overview
+Details: <https://discourse.gohugo.io/t/54772>
 
-Learn about Hugo framework's new features start from v0.146.0.  
+Description: Current page properties are set incorrectly
 
-Prepare and support theme upgrade and optimization.
+## Instructions
 
-## Usage
+Clone this branch of the repository and build the site.
 
-Ready the Hugo binary than v0.146.0 and clone a speific branch starting test:
-
-```bash
-git clone --single-branch -b <branch-name> https://github.com/elkan1788/hugo-travel <branch-name>
-cd <branch-name>
-hugo server
+```text
+git clone --single-branch -b hugo-forum-topic-54772 https://github.com/elkan1788/hugo-travel hugo-forum-topic-54772
+cd hugo-forum-topic-54772
+hugo convert toYAML --unsafe
+ cat content/_index.md
+cat themes/hugo-next-v5/content/_index.md
+cat themes/hugo-next-v5/content/posts/post-1.md
 ```
+
+> [!NOTE]
+> There used the command `hugo new theme hugo-theme-v5 --format yaml` to create new theme, but the content file's front matter still keep toml style, so sure is it a bug. Maybe it found the `content/_index.md` file is over theme's content, so not conveted it.
