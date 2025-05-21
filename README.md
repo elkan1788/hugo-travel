@@ -14,5 +14,5 @@ hugo server
 
 Then you can vist the page on browser with URL: [http://localhost:1313/posts/custom1/](http://localhost:1313/posts/custom1/), then found the custom layout not worked (see the post's title without Custom Layout). And the custome type [http://localhost:1313/custom/first/](http://localhost:1313/custom/first/) was woked fine. So why?
 
-> [!WARING]
+> [!WARNING]
 > Then you will see the `layout` paramter was not work, and the `type` paramter will work fine. On offical document suggested `type` more better, but I want to know why the `layout` not worked.
