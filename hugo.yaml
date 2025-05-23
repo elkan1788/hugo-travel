@@ -1,0 +1,28 @@
+enableEmoji: true
+enableRobotsTXT: true
+
+markup:
+  _merge: deep
+  highlight:  
+    lineNos: true
+    style: rose-pine-moon
+
+minify:
+  minifyOutput: true
+
+baseURL: https://example.org/
+title: Merge Config Test
+languageCode: en-US
+menus:
+  main:
+  - name: Home
+    pageRef: /
+    weight: 10
+  - name: Posts
+    pageRef: /posts
+    weight: 20
+
+theme: hugo-next-v5
+
+params:
+  author: elkan1788

@@ -1,0 +1,44 @@
+baseURL: https://example.org/
+languageCode: en-US
+menus:
+  main:
+  - name: Home
+    pageRef: /
+    weight: 10
+  - name: Posts
+    pageRef: /posts
+    weight: 20
+  - name: Tags
+    pageRef: /tags
+    weight: 30
+module:
+  hugoVersion:
+    extended: true
+    min: 0.146.0
+title: My New Hugo Site
+
+sitemap:
+  filename: "sitemap.xml"
+  changefreq: "weekly"
+  priority: 0.5
+
+outputFormats:
+  RSS:
+    baseName: "rss"
+
+outputs:
+  home: ["HTML", "RSS"]
+
+markup:
+  highlight:
+    anchorLineNos: true
+    codeFences: true
+    guessSyntax: true
+    lineNos: false
+    lineNumbersInTable: true
+    noClasses: true
+    tabWidth: 2
+    style: emacs
+
+params:
+  author: Hugo
