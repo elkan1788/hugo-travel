@@ -23,5 +23,5 @@ cd hugo-feature-merge_config
 hugo server
 ```
 
-> [!NOTICE]
+> [!NOTE]
 > Then visit the default URL [http://localhost:1313/](http://localhost:1313/) on browser, you will find that site's configuration will override the theme's configuration.
