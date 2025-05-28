@@ -7,11 +7,18 @@
   <header>
     {{ partial "header.html" . }}
   </header>
+  {{/* Don't used turbo frame label, 
+  that is will put the URL into frame,
+  and the browser URL not change,
+  and the static resource will not worked. */}}
+  {{/*  <turbo-frame id="page-content">  */}}
   <main>
     {{ block "main" . }}{{ end }}
   </main>
+{{/*  </turbo-frame>  */}}
   <footer>
     {{ partial "footer.html" . }}
   </footer>
+  {{ partial "page-config.html" . }}
 </body>
 </html>

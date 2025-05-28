@@ -1,0 +1,8 @@
+{{ $pageCfg := dict
+  "isHome"    .IsHome
+  "isPage"    .IsPage
+  "permalink" (.Page.Permalink | absURL)
+  "path"      (.Page.Permalink | path.Base)
+  "title"     .Page.Title 
+}}
+<script class="next-config" data-name="page" type="application/json">{{ $pageCfg }}</script>
