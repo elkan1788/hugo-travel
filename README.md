@@ -18,7 +18,7 @@ hugo server
 
 There find that it very easy use Turbo implements SAP feature. If you not any script action, there only refer the script into your HTML code inside into  the `<head>` tag. And if you want make some action with user , then can through the Turbo's event into your JavaScript code.
 
-> ![NOTE]
+> [!NOTE]
 > Give up to used turbo-stream function, because it's need server output special template HTML code.
 
 All Turbo Events sees as blew table shows:
