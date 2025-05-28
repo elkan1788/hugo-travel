@@ -2,15 +2,19 @@
 
 ## Overview
 
-Learning Hugo Docs site used [Turbo](https://github.com/hotwired/turbo) implements SAP feature.
+Learning Hugo Docs site used [Turbo](https://github.com/hotwired/turbo) implements SPA(Single Page WEB Application) feature.
 
+> [!NOTE]
+> Some refer resource:
+> - [hotwire-reactive-rails-with-no-javascript](https://xfyuan.github.io/2021/04/hotwire-reactive-rails-with-no-javascript/)
+> - [hugo-turbo-getting-started-your-experience](https://discourse.gohugo.io/t/hugo-turbo-getting-started-your-experience)
 ## Usage
 
 Ready the Hugo binary than v0.146.0 and clone a speific branch starting test:
 
 ```bash
-git clone --single-branch -b hugo-feature-turbo_sap https://github.com/elkan1788/hugo-travel hugo-feature-turbo_sap
-cd hugo-feature-turbo_sap
+git clone --single-branch -b hugo-feature-turbo_spa https://github.com/elkan1788/hugo-travel hugo-feature-turbo_spa
+cd hugo-feature-turbo_spa
 hugo server
 ```
 
